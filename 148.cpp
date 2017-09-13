@@ -80,6 +80,7 @@ ListNode* freeList(ListNode *head)
     return head;
 }
 
+/* 归并操作，合并已经排好序的两个子链表（需要提交） */
 ListNode* mergeList(ListNode *left, ListNode *right)
 {
     ListNode temp(0);
@@ -104,6 +105,7 @@ ListNode* mergeList(ListNode *left, ListNode *right)
     return temp.next;
 }
 
+/* 递归实现的链表归并排序（自顶向下）*/
 ListNode* sortList(ListNode *head)
 {
     if(head == NULL || head->next == NULL)
